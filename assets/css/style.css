@@ -1,0 +1,552 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* <===================================================================header=======================================================================> */
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 46px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* <================================================NAVBAR======================================================> */
+nav {
+    height: 100%;
+    display: inline-flex;
+}
+
+nav > #nav-bar{
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+    width:auto;
+    justify-content: left;
+    align-items: center;
+}
+
+nav #nav-bar li {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav .nav-item, .sub-nav-item{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav-bar li:hover{
+    background-color: #ccc;
+}
+
+#nav-bar li:hover .nav-item{
+    color: black;
+}
+
+#nav-bar li:hover #sub-nav-bar{
+    display: block;
+    
+}
+
+.ti-angle-down{
+    /* margin-left: 5px; */
+    font-size: 8px;
+    /* height: 100%;
+    justify-content: center; */
+}
+
+.nav-item.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+nav #sub-nav-bar{
+    display: none;
+    position: absolute;
+    height: 80%;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+}
+
+nav ul li ul li{
+    background-color: #fff;
+}
+
+nav ul li .sub-nav-item{
+    padding-left: 15px;
+    display: block;
+    width: 160px;
+    text-align: left;
+    color: black;
+    text-transform: capitalize;
+}
+
+/* <================================================SEARCH======================================================> */
+
+header .search-button{
+    display: inline-flex;
+    padding: 15px 24px 12px;
+    height: 46px;
+    width: auto;
+    color: white;
+}
+
+header .search-button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+/* <===================================================================SLIDER=======================================================================> */
+
+#slider{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 46px;
+    padding-bottom: 50%;
+    background: url("/assets/image/slider/chicago.jpg") center / cover no-repeat;
+}
+
+/* <================================================CONTENT======================================================> */
+
+#slider .slider-content{
+    position: absolute;
+    bottom: 0;
+    padding: 32px 16px;
+}
+
+#slider .slider-content .head-content{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+}
+
+#slider .slider-content .main-content{
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bolder;
+    color: white;
+}
+
+/* <===================================================================SECTION=======================================================================> */
+
+section{
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
+
+/* <================================================CONTENT-1======================================================> */
+
+section .content{
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+/* <============================HEAD-CONTENT-1=======================================> */
+
+section .head-content{
+    display: block;
+    justify-content: center;
+}
+
+section .head-content h2{
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px  0;
+    letter-spacing: 4px;
+}
+
+section .head-content p{
+    opacity: 0.6;
+    text-align: center;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+/* <============================MAIN-CONTENT-1=======================================> */
+
+section .main-content{
+    text-align: justify;
+    margin: 15px 0;
+}
+
+/* <============================FOOT-CONTENT-1=======================================> */
+
+section .foot-content{
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+}
+
+section .member{
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .member-name{
+    text-align: center;
+    margin: 15px 0;
+}
+
+section #content-1 img{
+    width: 60%;
+    border-radius: 4px;
+}
+
+/* <================================================CONTENT-2======================================================> */
+
+section #content-2{
+    background-color: black;
+    height: auto;
+}
+
+/* <============================HEAD-CONTENT-2=======================================> */
+
+#content-2 .head-content{
+    color: white;
+}
+
+/* <============================MAIN-CONTENT-2=======================================> */
+
+#content-2 .main-content, .foot-content{
+    background-color: white;
+}
+
+#content-2 .main-content li{
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    display: list-item;
+    color: #757575;
+    list-style-type: none;
+
+}
+
+#content-2 .main-content .sold-out{
+    margin: 0 0 0 16px;
+    padding: 2px 8px;
+    background-color: #f44336;
+    color: white;
+}
+
+#content-2 .main-content .count{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    float: right;
+    margin-right: 16px;
+    padding: 1px 8px;
+}
+
+/* <============================FOOT-CONTENT-2=======================================> */
+#content-2 .foot-content {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#content-2 .foot-content .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#content-2 .foot-content .card img {
+    width: 100%;
+}
+
+#content-2 .foot-content .card img:hover {
+    filter: brightness(50%);
+}
+
+#content-2 .foot-content .card .info {
+    padding: 0 16px;
+}
+
+#content-2 .foot-content .card .info .name{
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+#content-2 .foot-content .card .info .date{
+    opacity: 0.6;
+}
+
+#content-2 .foot-content .card .info .detail{
+    margin: 15px 0;
+}
+
+#content-2 .foot-content .card .info .hover-button{
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.hover-button:hover{
+    cursor: pointer;
+    background-color: #cccccc !important;
+    color: black !important;
+}
+
+/* <================================================CONTENT-3======================================================> */
+/* <============================MAIN-CONTENT-3=======================================> */
+
+#content-3 .main-content{
+    display: flex;
+    padding: 32px 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+/* <=================LEFT-CONTENT-3=================> */
+
+#content-3 .main-content input{
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+#content-3 .main-content .left-content{
+    margin: 0 0 16px;
+    font-size: 18px;
+    display: flex;
+}
+
+#content-3 .main-content .left-content .colum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#content-3 .main-content .left-content .colum i {
+    height: calc(100% / 3);
+    padding: 4px 5px 0 0;
+}
+
+#content-3 .main-content .left-content .colum p {
+    height: calc(100% / 3);
+    padding-left: 5px;
+}
+
+/* <=================RIGHT-CONTENT-3=================> */
+
+#content-3 .main-content .right-content .input-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#content-3 .main-content .right-content .input-content .input-name{
+    margin-right: 4px;
+}
+
+#content-3 .main-content .right-content .input-content .input-email{
+    margin-left: 4px;
+}
+
+#content-3 .main-content .right-content .input-content .input-message{
+    width: 100%;
+    margin-top: 8px;
+}
+
+#content-3 .main-content .right-content .hover-button{
+    float: right;
+    margin: 16px 0;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+
+/* <================================================CONTENT-4======================================================> */
+/* <============================MAIN-CONTENT-4=======================================> */
+section #content-4{
+    width: 100%;
+    padding-bottom: 50%;
+    background: url("/assets/image/section/map.jpg") center / cover no-repeat;
+}
+
+/* <===================================================================FOOTER=======================================================================> */
+
+footer #footer-container{
+    padding: 64px 16px;
+    justify-content: center;
+    color: black;
+    background-color: #f1f1f1;
+}
+
+footer #footer-container{
+    text-align: center;
+    font-size: 22px;
+    opacity: 0.6;
+}
+
+footer #footer-container p{
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+footer #footer-container p a{
+    color: black !important;
+}
+
+/* <===================================================================MODEL=======================================================================> */
+/* <================================================MODEL-CONTENT======================================================> */
+
+.modal{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    padding-top: 100px;
+    display: none;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal .modal-content{
+    width: 60%;
+    height: fit-content;
+    background-color: white;
+    position: relative;
+    animation: display ease 0.5s;
+}
+
+.modal .modal-content .modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    color: white;
+    font-size: 13px;
+}
+
+.modal .modal-content .modal-head-content{
+    width: 100%;
+    background: #009688;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 4px;
+    padding: 42px;
+}
+
+.modal .modal-content .modal-head-content .ti-bag {
+    margin-right: 10px;
+}
+
+.modal .modal-content .modal-main-content {
+    height: auto;
+    padding: 0 16px;
+}
+
+.modal .modal-main-content .content {
+    margin: 15px 0 15px 0;
+}
+
+.modal .modal-main-content .content input{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 14px;
+    font-size: 15px;
+}
+
+.modal .modal-main-content .pay-button{
+    width: 100%;
+    background: #009688;
+    border: none;
+    padding: 16px;
+    color: white;
+}
+
+.modal .modal-main-content .footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0 16px;
+}
+
+.modal .modal-main-content .footer button{
+    background: #f44336;
+    border: none;
+    padding: 8px 16px;
+    color: white;
+}
+
+.modal .modal-main-content .footer button i{
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.modal .modal-main-content .footer a{
+    color: #2196f3 !important;
+}
+
+.modal .modal-content .modal-button-hover:hover{
+    background: #cccccc !important;
+    color: black !important;
+    cursor: pointer;
+}
+
+@keyframes display {
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
