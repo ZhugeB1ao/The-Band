@@ -1,6 +1,6 @@
 const buyTickets = document.querySelectorAll('.js-buy-ticket');
 const modal = document.querySelector('.js-modal');
-const closeModal = document.querySelector('.js-close-modal');
+const closeModals = document.querySelectorAll('.js-close-modal');
 const modalContent = document.querySelector('.js-modal-content');
 
 function showBuyTickets() {
@@ -17,7 +17,9 @@ for(const buyTicket of buyTickets) {
 }
 
 // close modal
-closeModal.addEventListener('click', hideBuyTickets);
+for (const closeModal of closeModals) {
+    closeModal.addEventListener('click', hideBuyTickets);
+}
 
 // close if click outside of modal
 modal.addEventListener('click', hideBuyTickets);
