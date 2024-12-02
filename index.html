@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <title>Band</title>
@@ -10,14 +12,14 @@
 
 <body>
     <header>
-        <nav>
-            <ul id="nav-bar">
-                <li><a href="#" class="nav-item">HOME</a></li>
-                <li><a href="#band" class="nav-item">BAND</a></li>
-                <li><a href="#tour" class="nav-item">TOUR</a></li>
-                <li><a href="#contact" class="nav-item">CONTACT</a></li>
+        <nav id="js-hide-nav">
+            <ul id="nav-bar" class="js-nav-bar">
+                <li><a href="#" class="nav-item js-click-section">HOME</a></li>
+                <li><a href="#band" class="nav-item js-click-section">BAND</a></li>
+                <li><a href="#tour" class="nav-item js-click-section">TOUR</a></li>
+                <li><a href="#contact" class="nav-item js-click-section">CONTACT</a></li>
                 <li>
-                    <a href="" class="nav-item arrow">MORE<i class="ti-angle-down"></i></a>
+                    <a href="#" class="nav-item arrow">MORE<i class="ti-angle-down"></i></a>
                     <ul id="sub-nav-bar">
                         <li><a href="#" class="sub-nav-item">Merchandise</a></li>
                         <li><a href="#" class="sub-nav-item">Extras</a></li>
@@ -28,6 +30,7 @@
         </nav>
 
         <div class="search-button"><i class="ti-search"></i></div>
+        <div class="menu-button js-menu-button"><i class="ti-menu"></i></div>
     </header>
 
     <div id="slider">

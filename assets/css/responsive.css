@@ -1,0 +1,74 @@
+/* <================================LAPTOP===================================> */
+@media (min-width: 1024px) {
+   
+}
+
+/* <================================TABLET===================================> */
+@media (min-width: 740px) and (max-width: 1023px) {
+   
+}
+
+/* <================================MOBILE===================================> */
+@media (max-width: 739px) {
+    header{
+        justify-content: end;
+    }
+
+    nav{
+        width: 100%;
+        display: none;
+    }
+    nav > #nav-bar, .open-nav-bar{
+        display: block;
+        height: 500%;
+        width: 100%;
+        background-color: black;
+    }
+
+    nav #nav-bar>li {
+        height: 20%;
+        justify-content: flex-start;
+    }
+
+    header .search-button{
+        display: none;
+    }
+
+    header .menu-button{
+        display: block;
+    }
+
+    section .foot-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+    }
+
+    section .member{
+        padding: 0;
+        width: 100%;
+    }
+
+    section .member-name{
+        font-size: 18px;
+    }
+    
+    #content-3 .main-content{
+        flex-direction: column;
+    }
+
+    #content-3 .main-content .right-content .input-top-content{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #content-3 .main-content .right-content .input-content .input-name{
+        margin: 0;
+    }
+
+    #content-3 .main-content .right-content .input-content .input-email{
+        margin: 0;
+    }
+}

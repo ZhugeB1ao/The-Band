@@ -59,6 +59,7 @@ nav .nav-item, .sub-nav-item{
     text-decoration: none;
     padding: 0 24px;
     height: 100%;
+    width: 100%;
 }
 
 nav .nav-item{
@@ -66,7 +67,7 @@ nav .nav-item{
 }
 
 #nav-bar li:hover{
-    background-color: #ccc;
+    background-color: #ccc !important;
 }
 
 #nav-bar li:hover .nav-item{
@@ -84,7 +85,6 @@ nav .nav-item{
 
 .nav-item.arrow {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 5px;
 }
@@ -128,6 +128,14 @@ header .search-button:hover{
     cursor: pointer;
 }
 
+/* <================================================MENU======================================================> */
+
+header .menu-button{
+    display: none;
+    color: white;
+    height: 46px;
+    padding: 15px 24px 12px;
+}
 /* <===================================================================SLIDER=======================================================================> */
 
 #slider{
@@ -564,3 +572,5 @@ footer #footer-container p a{
         transform: translateY(0);
     }
 }
+
+
