@@ -5,9 +5,14 @@
 
 /* <================================TABLET===================================> */
 @media (min-width: 740px) and (max-width: 1023px) {
-   
-}
+    .modal .modal-content {
+        width: 80%;
+    }
 
+    .modal .modal-content .modal-head-content {
+        padding: 32px;
+    }
+}
 /* <================================MOBILE===================================> */
 @media (max-width: 739px) {
     header{
@@ -70,5 +75,29 @@
 
     #content-3 .main-content .right-content .input-content .input-email{
         margin: 0;
+    }
+
+    .modal .modal-content{
+        width: 80%;
+        transform: translateY(-30px) ;
+    }
+
+    .modal .modal-content {
+        animation: displayMobile ease 0.5s;
+    }
+
+    .modal .modal-content .modal-head-content {
+        padding: 24px;
+    }
+
+    @keyframes displayMobile {
+        from{
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }

@@ -51,7 +51,7 @@ function openNavBar() {
     }
 }
 
-//hide menu and display menu icon when click out side of menu area
+//hide menu and display menu icon when click outside of menu area
 function hideNavBar() {
     menuButton.style.display = "block"
     hideNav.style.display = "none";

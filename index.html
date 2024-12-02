@@ -145,16 +145,20 @@
                     </div>
 
                     <div class="right-content">
-                        <div class="input-content">
-                            <div class="input-top-content">
-                                <input class="input-name" type="text" required placeholder="Name">
-                                <input class="input-email" type="email" required placeholder="Email">
+                        <form action="">
+                            <div class="input-content">
+                                <div class="input-top-content">
+                                    <input class="input-name" type="text" required placeholder="Name">
+                                    <input class="input-email" type="email" required placeholder="Email">
+                                </div>
+
+                                <div class="input-down-content">
+                                    <input class="input-message" type="text" required placeholder="Message">
+                                </div>
                             </div>
-                            <div class="input-down-content">
-                                <input class="input-message" type="text" required placeholder="Message">
-                            </div>
-                        </div>
-                        <input class="hover-button" type="submit" value="SEND">
+                        
+                            <input class="hover-button" type="submit" value="SEND">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -186,24 +190,26 @@
             </div>
 
             <div class="modal-main-content">
-                <div class="content">
-                    <i class="ti-shopping-cart"></i>
-                    Tickets, $15 per person
-                    <input type="text" placeholder="How many?">
-                </div>
-
-                <div class="content">
-                    <i class="ti-user"></i>
-                    Send to
-                    <input type="email" placeholder="Enter Email">
-                </div>
-
-                <button class="pay-button modal-button-hover">PAY<i class="ti-check"></i></button>
-
-                <div class="footer">
-                    <button class="close-button modal-button-hover js-close-modal">Close<i class="ti-close"></i></button>
-                    <p>Need <a href="#">help?</a></p>
-                </div>
+                <form action="">
+                    <div class="content">
+                        <i class="ti-shopping-cart"></i>
+                        Tickets, $15 per person
+                        <input type="text" placeholder="How many?" required>
+                    </div>
+    
+                    <div class="content">
+                        <i class="ti-user"></i>
+                        Send to
+                        <input type="email" placeholder="Enter Email" required>
+                    </div>
+    
+                    <button class="pay-button modal-button-hover">PAY<i class="ti-check"></i></button>
+    
+                    <div class="footer">
+                        <button class="close-button modal-button-hover js-close-modal">Close<i class="ti-close"></i></button>
+                        <p>Need <a href="#">help?</a></p>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
