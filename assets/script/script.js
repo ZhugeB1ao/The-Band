@@ -18,12 +18,12 @@ function hideBuyTickets() {
 }
 
 //for any buy ticket button is click => show modal
-for(const buyTicket of buyTickets) {
+for(let buyTicket of buyTickets) {
     buyTicket.addEventListener('click', showBuyTickets);
 }
 
 // close modal
-for (const closeModal of closeModals) {
+for (let closeModal of closeModals) {
     closeModal.addEventListener('click', hideBuyTickets);
 }
 
